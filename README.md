@@ -1,14 +1,15 @@
-# React Native - REST API Consumer
+# Serverless React Native CRUD (Firebase Firestore)
 
 ## 📌 Overview
-A lightweight React Native application built to demonstrate asynchronous data fetching from external REST APIs using modern JavaScript features.
+A mobile application built with React Native and Expo, showcasing a **Cloud-Native / Serverless** approach by integrating directly with Firebase Firestore for real-time data management.
 
-## ⚙️ Features
-* **Asynchronous Fetching:** Implementation of `async/await` patterns to retrieve data seamlessly without blocking the main UI thread.
-* **API Integration:** Connects to RapidAPI endpoints, managing custom HTTP headers (`x-rapidapi-key`, `x-rapidapi-host`) for authentication.
-* **State Management:** Uses React hooks (`useState`, `useEffect`) to manage loading states and JSON payload parsing.
+## ⚙️ Core Features & Architecture
+* **Serverless Backend (BaaS):** Eliminates the need for a traditional backend server by utilizing Firebase Firestore (NoSQL document database) for data persistence.
+* **Real-Time Synchronization:** Implements Firestore's `onSnapshot` listener to push real-time state updates to the UI, ensuring data consistency across multiple clients without manual polling.
+* **Asynchronous Operations:** Fully asynchronous CRUD (Create, Read, Delete) operations handling cloud latency and potential network failures gracefully.
+* **Cross-Platform:** Built using Expo to compile natively for both iOS and Android from a single JavaScript codebase.
 
 ## 🚀 Relevance for Cloud / SRE
-A deep understanding of how front-end clients request, parse, and handle failures from backend endpoints is essential for troubleshooting API latency, CORS issues, or gateway timeouts in a microservices architecture.
+For a Site Reliability Engineer or Cloud Engineer, understanding how modern front-end clients interact with cloud-managed services (like Firebase/AWS Amplify) is crucial. This project demonstrates hands-on knowledge of NoSQL database interactions, asynchronous payload handling, and serverless architecture principles.
 
-*Tech Stack: React Native, JavaScript (ES6), REST APIs, JSON.*
+*Tech Stack: React Native, JavaScript (ES6), Firebase Firestore (NoSQL), Expo.*
